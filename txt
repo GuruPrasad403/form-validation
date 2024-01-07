@@ -1,0 +1,26 @@
+conpin.addEventListener("focus",()=>{
+    conpin.addEventListener("keypress",(event)=>{
+        if (!(conpin.value===pin.value)) {
+            conpin.classList.add("err");
+            conpin.classList.remove("Nerr");
+        } else {
+            conpin.classList.remove("err");
+            conpin.classList.add("Nerr");
+        }
+    })
+    })
+    conpin.addEventListener("blur",()=>{
+        if(conpin.value==""){
+            conpin.setAttribute('placeholder',"Name Compulsary")
+           conpin.classList.add("red")
+            conpin.classList.add("err");
+    
+        }
+    else if (!(conpin.value===pin.value)){    
+        conpin.classList.add("err");
+    }
+    else{
+        conpin.classList.remove("err");
+        conpin.classList.remove("Nerr");
+    }
+    })

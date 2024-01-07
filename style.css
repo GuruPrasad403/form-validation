@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+.form-container{
+    width: 100vw;
+    height: 100vh;
+    
+}
+.form-container,.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.form{
+    box-shadow: 2px 1px 3px rgb(21, 25, 21);
+    margin: 20rem;
+    padding: 50px;
+    border-radius: 20px;
+}
+.form div form{
+    display: flex;
+    flex-direction: column;
+}
+form label, form input, form div{
+    padding: 15px;
+    margin: 5px;
+    border-radius: 20px;
+}
+.err{
+    border-color: red;
+}
+.Nerr{
+    border-color: green;
+}
+.red::placeholder{
+    color:red;
+}
+
